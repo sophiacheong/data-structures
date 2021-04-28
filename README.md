@@ -63,45 +63,45 @@ It uses a pre-commit hook to run staged files through __eslint__ before each com
 
 2. __Functional instantiation with shared methods:__ same as step 1, but with shared methods
     * ___Do:___
-     * Work within the __`src/functional-shared/`__ folder
-     * Create an object that holds the methods that will be shared by all instances of the class
-     * Use the keyword __`this`__ in your methods
-     * Use __[_.extend](http://underscorejs.org/#extend)__ to copy the methods onto the instance
+      * Work within the __`src/functional-shared/`__ folder
+      * Create an object that holds the methods that will be shared by all instances of the class
+      * Use the keyword __`this`__ in your methods
+      * Use __[_.extend](http://underscorejs.org/#extend)__ to copy the methods onto the instance
     * ___Don't:___
-     * Use the keyword __`new`__ or __`prototype`__ chains
+      * Use the keyword __`new`__ or __`prototype`__ chains
     * ___Example:___ [functional instantiation example](https://github.com/hackreactor/giraffeMaker/blob/master/src/giraffeExtend.js)
  
 3. __Prototypal instantiation:__ using __`Object.create`__
     * ___Do:___
-     * Work within the __`src/protoypal/`__ folder.
-     * Use __[Object.create](https://duckduckgo.com/l/?uddg=https%3A%2F%2Fdeveloper.mozilla.org%2Fen%2DUS%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FObject%2Fcreate&rut=41c78a2d58c18bcf5531edad42495c1702d655c9c97194364201aa907a1a1983)__ with the object from step 2 to create instances of your class
+      * Work within the __`src/protoypal/`__ folder.
+      * Use __[Object.create](https://duckduckgo.com/l/?uddg=https%3A%2F%2Fdeveloper.mozilla.org%2Fen%2DUS%2Fdocs%2FWeb%2FJavaScript%2FReference%2FGlobal_Objects%2FObject%2Fcreate&rut=41c78a2d58c18bcf5531edad42495c1702d655c9c97194364201aa907a1a1983)__ with the object from step 2 to create instances of your class
     * ___Don't:___
-     * Use the keyword __`new`__
+      * Use the keyword __`new`__
     * ___Example:___ [prototypal instantiation example](https://github.com/hackreactor/giraffeMaker/blob/master/src/giraffePrototype.js)
  
 4. __Pseudoclassical instantiation:__ create instances with the keyword __new__
     * ___Do:___
-     * Work within the __`src/pseudoclassical/`__ folder
-     * Capitalize your function name to indicate to others that it is intended to be run with the keyword __new__
-     * Use the keyword __`new`__ when instantiating your class
-     * Use the keyword __`this`__ in your constructor
+       * Work within the __`src/pseudoclassical/`__ folder
+       * Capitalize your function name to indicate to others that it is intended to be run with the keyword __new__
+       * Use the keyword __`new`__ when instantiating your class
+       * Use the keyword __`this`__ in your constructor
     * ___Don't:___
-     * Declare the instance explicitly
-     * Return the instance explicitly
+      * Declare the instance explicitly
+      * Return the instance explicitly
     * ___Example:___ [pseudoclassical instantiation example](https://github.com/hackreactor/giraffeMaker/blob/master/src/giraffePseudoClassical.js)
    
 5. __ES6 instantiation:__ declare classes with the keyword __`class`__
     * ___Do:___
-     * Work within the __`src/es6/`__ folder
-     * Capitalize your function name to indicate to others that it is intended to be run with the keyword __`new`__
-     * Use the keyword __`new`__ when instantiating your class
-     * Use the keyword __`this`__ in your constructor
-     * Explicitly declare a class method named __`constructor`__
-     * Declare all other class methods within the class declaration
+      * Work within the __`src/es6/`__ folder
+      * Capitalize your function name to indicate to others that it is intended to be run with the keyword __`new`__
+      * Use the keyword __`new`__ when instantiating your class
+      * Use the keyword __`this`__ in your constructor
+      * Explicitly declare a class method named __`constructor`__
+      * Declare all other class methods within the class declaration
     * ___Don't:___
-     * Declare the instance explicitly
-     * Return the instance explicitly
-     * Add class methods to the class prototype directly
+      * Declare the instance explicitly
+      * Return the instance explicitly
+      * Add class methods to the class prototype directly
     * ___Example:___ [es6 instantiation example](https://github.com/hackreactor/giraffeMaker/blob/master/src/giraffeES6.js)
     
 # Sprint Two: Data Structures #

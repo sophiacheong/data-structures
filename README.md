@@ -25,14 +25,17 @@ Implement both __stack__ and __queue__ data structures in each of the instantiat
 
 - [ ] Pass all the tests. To run all the tests, first run npm start in your terminal from the sprint's root directory. You'll know if this step completed successfully when you see the following output in your terminal:
 
-``` Serving "/Users/.../your-sprint-folder" at http://127.0.0.1:xxxx ```
+``` 
+Serving "/Users/.../your-sprint-folder" at http://127.0.0.1:xxxx 
+```
 
 Now, navigate to the __`http://127.0.0.1:xxxx`__ link in your browser (don't forget to include the colon and extra numbers at the end), and open the __`SpecRunner.html`__ file.
 
 #### Pomander ####
 In Terminal, run the following command from within this repository:
-
-``` curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash ```
+``` 
+curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash 
+```
 [Pomander](https://github.com/reactorcore/pomander) will check your code for syntax errors and violations against the Hack Reactor style guide before each commit.
 
 It uses a pre-commit hook to run staged files through __eslint__ before each commit. __eslint__ is a linter that will block your commit should you have any syntax errors, or, should you violate the Hack Reactor style guide. There are some preferred whitespace style rules that will give warnings but not block your commit. Your work will be of a higher quality if you follow the instructions of the linter. That said, if the linter gives you any funny bugs, these bugs are not intentional, and you should feel free to skip using it during commits with the __--no-verify__ option.

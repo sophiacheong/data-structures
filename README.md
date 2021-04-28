@@ -1,5 +1,6 @@
-# Exercise: Data Structures #
-# Sprint One: Object-Oriented Programming #
+# Exercise: Data Structures 
+
+Sprint One: Object-Oriented Programming #
 In this assignment, we'll implement and test two basic data structures:
 
 1. Queue 

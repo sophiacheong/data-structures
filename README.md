@@ -196,7 +196,7 @@ A contact list you might add to or remove from over time.
       - [ ] A __`.retrieve()`__ method
       - [ ] A __`.remove()`__ method
    - [ ] What is the time complexity of the above functions?
-  - [ ] Using your understanding of hash tables, refactor your set implementation from above to run in constant time
+ - [ ] Using your understanding of hash tables, refactor your set implementation from above to run in constant time
 __On Objects and Hash Tables:__ An astute hacker might find themself wondering "Is it not so that a JavaScript object is a hash table?" or even further, "Why would I ever need to create a hash table in JavaScript?" While it is true that objects and hash tables are functionally similar, knowing how a hash table works is hugely important as they are an incredibly useful and fundamental data structure. To have detailed knowledge of how a hash table is constructed will give you valuable insight on your path to code mastery. Additionally, other languages might not provide the convenience of JavaScript's object class, meaning you may someday have to put your hash table construction abilities to good use.
 
 ** Interesting Aside: JavaScript objects aren't necessarily backed by hash tables. Despite the similarities, the [ECMA-262](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf) standard makes no restrictions on how JavaScript objects are implmented. The [V8 JavaScript engine](https://v8.dev/#prop_access), which is used in Chrome, implements objects in a way that is significantly faster than using a hash table.

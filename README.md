@@ -54,11 +54,11 @@ It uses a pre-commit hook to run staged files through __eslint__ before each com
 #### Instantiation Styles ####
 1. __Functional instantiation__: a simple "maker" pattern
     * ___Do:____
-     * Work within the __`src/functional/`__ folder
-     * Define all functions and properties within the maker function
-     * Capitalize the maker function name
+      * Work within the __`src/functional/`__ folder
+      * Define all functions and properties within the maker function
+      * Capitalize the maker function name
     * ___Don't:___
-     * Use the keyword __`new`__, the keyword __`this`__, or any __`prototype`__ chains
+      * Use the keyword __`new`__, the keyword __`this`__, or any __`prototype`__ chains
     * ___Example:___ The provided classes __`Stack`__ and __`Queue`__ already follow this pattern
 
 2. __Functional instantiation with shared methods:__ same as step 1, but with shared methods

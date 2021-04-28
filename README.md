@@ -126,12 +126,12 @@ A linked list is a dynamic data structure that allows for constant time insertio
 __A linked list would be great for....__
 An itinerary you expect to add and remove destinations to and from.
 * A __`linkedList`__ class, in functional style, with the following properties:
- - [ ] __`.head`__ property, a __`linkedListNode`__ instance
- - [ ] __`.tail`__ property, a __`linkedListNode`__ instance
- - [ ] __`.addToTail()`__ method, takes a value and adds it to the end of the list
- - [ ] __`.removeHead()`__ method, removes the first node from the list and returns its value
- - [ ] __`.contains()`__ method, returns boolean reflecting whether or not the passed-in value is in the linked list
- - [ ] What is the time complexity of the above functions?
+   - [ ] __`.head`__ property, a __`linkedListNode`__ instance
+   - [ ] __`.tail`__ property, a __`linkedListNode`__ instance
+   - [ ] __`.addToTail()`__ method, takes a value and adds it to the end of the list
+   - [ ] __`.removeHead()`__ method, removes the first node from the list and returns its value
+   - [ ] __`.contains()`__ method, returns boolean reflecting whether or not the passed-in value is in the linked list
+   - [ ] What is the time complexity of the above functions?
   
 2. __[Tree](https://en.wikipedia.org/wiki/Tree_(data_structure))__
 A tree is a hierarchical data structure consisting of a node (potentially) with children. The children are trees unto themselves, that is, nodes with (potential) children. For this reason the tree is referred to as a recursive data structure.
@@ -141,10 +141,10 @@ A tree is a hierarchical data structure consisting of a node (potentially) with 
 __A tree would be great for....__
 Making a family tree.
 * A __tree__ class, in functional with shared methods style, with the following properties:
- - [ ] __`.children`__ property, an array containing a number of subtrees
- - [ ] __`.addChild()`__ method, takes any value, sets that as the target of a node, and adds that node as a child of the tree
- - [ ] A __`.contains()`__ method, takes any input and returns a boolean reflecting whether it can be found as the value of the target node or any descendant node
- - [ ] What is the time complexity of the above functions?
+   - [ ] __`.children`__ property, an array containing a number of subtrees
+   - [ ] __`.addChild()`__ method, takes any value, sets that as the target of a node, and adds that node as a child of the tree
+   - [ ] A __`.contains()`__ method, takes any input and returns a boolean reflecting whether it can be found as the value of the target node or any descendant node
+   - [ ] What is the time complexity of the above functions?
 
 3. __[Graph](https://en.wikipedia.org/wiki/Graph_(mathematics))__ 
 Graphs consist of nodes (often referred to as vertices) and edges (often referred to as arcs) that connect the nodes. Unlike trees, graphs are not necessarily hierarchical. Graphs can be undirected, which means that the relationship of any 2 nodes connected by an edge is a symmetrical relationship, or they can be directed, which means there is an asymmetrical relationship between nodes that are connected by an edge. You will be implementing an undirected graph.
@@ -154,15 +154,15 @@ Graphs consist of nodes (often referred to as vertices) and edges (often referre
 __A graph would be great for....__
 Representing how a collection of websites (or the entire world wide web) link to each other, and [many other things](https://www.cs.princeton.edu/courses/archive/spring13/cos226/lectures/42DirectedGraphs.pdf)
 * Implement a __graph__ class, in pseudoclassical style, with the following properties:
- - [ ] It is an undirected graph. It does not have to be 'connected'.
- - [ ] An __`.addNode()`__ method that takes a new node and adds it to the graph
- - [ ] A __`.contains()`__ method that takes any node and returns a boolean reflecting whether it can be found in the graph
- - [ ] A __`.removeNode()`__ method that takes any node and removes it from the graph, if present. All edges connected to that Node are removed as well.
- - [ ] An __`.addEdge()`__ method that creates a edge (connection) between two nodes if they both are present within the graph
- - [ ] A __`.hasEdge()`__ method that returns a boolean reflecting whether or not two nodes are connected
- - [ ] A __`.removeEdge()`__ method that removes the connection between two nodes
- - [ ] A __`.forEachNode()`__ method that traverses through the graph, calling a passed in function once on each node
- - [ ] What is the time complexity of the above functions?
+   - [ ] It is an undirected graph. It does not have to be 'connected'.
+   - [ ] An __`.addNode()`__ method that takes a new node and adds it to the graph
+   - [ ] A __`.contains()`__ method that takes any node and returns a boolean reflecting whether it can be found in the graph
+   - [ ] A __`.removeNode()`__ method that takes any node and removes it from the graph, if present. All edges connected to that Node are removed as well.
+   - [ ] An __`.addEdge()`__ method that creates a edge (connection) between two nodes if they both are present within the graph
+   - [ ] A __`.hasEdge()`__ method that returns a boolean reflecting whether or not two nodes are connected
+   - [ ] A __`.removeEdge()`__ method that removes the connection between two nodes
+   - [ ] A __`.forEachNode()`__ method that traverses through the graph, calling a passed in function once on each node
+   - [ ] What is the time complexity of the above functions?
  
 4. __[Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type))__ 
 Sets contain unique values in no particular order.
@@ -172,13 +172,13 @@ Sets contain unique values in no particular order.
 __A set would be great for....__
 A raffle, where all the tickets are unique and you just want to randomly pick one (or several) out of them all.
 * A __set__ class, in prototypal style, with the following properties:
- - [ ] An __`.add()`__ method, takes any string and adds it to the set
- - [ ] A __`.contains()`__ method, takes any string and returns a boolean reflecting whether it can be found in the set
- - [ ] A __`.remove()`__ method, takes any string and removes it from the set, if present
- - [ ] What is the time complexity of the above functions?
-  * __Note:__ Sets should not use up any more space than necessary. Once a value is added to a set, adding it a second time should not increase the size of the set.
-  * __Note:__ Until the advanced section, your sets should handle only string values.
-  * __Note:__ This is a rather simple data structure. Take a look at the [Wikipedia](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) entry. Which native Javascript type fits the requirements best?
+   - [ ] An __`.add()`__ method, takes any string and adds it to the set
+   - [ ] A __`.contains()`__ method, takes any string and returns a boolean reflecting whether it can be found in the set
+   - [ ] A __`.remove()`__ method, takes any string and removes it from the set, if present
+   - [ ] What is the time complexity of the above functions?
+      * __Note:__ Sets should not use up any more space than necessary. Once a value is added to a set, adding it a second time should not increase the size of the set.
+      * __Note:__ Until the advanced section, your sets should handle only string values.
+      * __Note:__ This is a rather simple data structure. Take a look at the [Wikipedia](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) entry. Which native Javascript type fits the requirements best?
   
 5. __[Hash Table](https://en.wikipedia.org/wiki/Hash_tables)__ 
 Hash tables (sometimes called hash maps) store key value pairs. They do so in a memory efficient way by using a 'hashing function' that translates keys into numerical indices located within a fixed block of memory (think about the contiguous blocks of memory used in arrays). Hash tables only increase their size in memory when necessary, and reduce their size in memory when possible.

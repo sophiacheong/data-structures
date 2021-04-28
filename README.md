@@ -40,7 +40,7 @@ curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/instal
 
 It uses a pre-commit hook to run staged files through __eslint__ before each commit. __eslint__ is a linter that will block your commit should you have any syntax errors, or, should you violate the Hack Reactor style guide. There are some preferred whitespace style rules that will give warnings but not block your commit. Your work will be of a higher quality if you follow the instructions of the linter. That said, if the linter gives you any funny bugs, these bugs are not intentional, and you should feel free to skip using it during commits with the __--no-verify__ option.
 
-#### Data Structure Specs ####
+### Data Structure Specs ####
 - [ ] Implement a [stack](https://en.wikipedia.org/wiki/Stack_(abstract_data_type)) with the following methods:
     * push(string) - Add a string to the top of the stack
     * pop() - Remove and return the string on the top of the stack
@@ -118,7 +118,7 @@ Some failing specs are included. You're welcome! You should make them pass, then
 ## Bare Minimum Requirements ##
 ### Implement and test the following classes: ###
 
-##### 1. __[Linked List](https://en.wikipedia.org/wiki/Linked_list)__ #####
+#### 1. __[Linked List](https://en.wikipedia.org/wiki/Linked_list)__ ####
 A linked list is a dynamic data structure that allows for constant time insertion and removal at any point in the linked list (compare this to an array which on average has linear time insertion and removal operations). In exchange for this insertion and removal speed, linked lists are not indexed and any find operations on a link list require the linear time operation of traversing the entire linked-list from the beginning.
 
 ![image](https://user-images.githubusercontent.com/76498304/116344009-65397a80-a79a-11eb-8917-fd258d51d478.png)
@@ -133,7 +133,7 @@ An itinerary you expect to add and remove destinations to and from.
    - [ ] __`.contains()`__ method, returns boolean reflecting whether or not the passed-in value is in the linked list
    - [ ] What is the time complexity of the above functions?
   
-##### 2. __[Tree](https://en.wikipedia.org/wiki/Tree_(data_structure))__ #####
+#### 2. __[Tree](https://en.wikipedia.org/wiki/Tree_(data_structure))__ ####
 A tree is a hierarchical data structure consisting of a node (potentially) with children. The children are trees unto themselves, that is, nodes with (potential) children. For this reason the tree is referred to as a recursive data structure.
 
 ![image](https://user-images.githubusercontent.com/76498304/116344170-a16cdb00-a79a-11eb-92ee-90ea1ecc8a4a.png)
@@ -146,7 +146,7 @@ Making a family tree.
    - [ ] A __`.contains()`__ method, takes any input and returns a boolean reflecting whether it can be found as the value of the target node or any descendant node
    - [ ] What is the time complexity of the above functions?
 
-##### 3. __[Graph](https://en.wikipedia.org/wiki/Graph_(mathematics))__ #####
+#### 3. __[Graph](https://en.wikipedia.org/wiki/Graph_(mathematics))__ ####
 Graphs consist of nodes (often referred to as vertices) and edges (often referred to as arcs) that connect the nodes. Unlike trees, graphs are not necessarily hierarchical. Graphs can be undirected, which means that the relationship of any 2 nodes connected by an edge is a symmetrical relationship, or they can be directed, which means there is an asymmetrical relationship between nodes that are connected by an edge. You will be implementing an undirected graph.
 
 ![image](https://user-images.githubusercontent.com/76498304/116344291-d711c400-a79a-11eb-80e8-079e32af25ed.png)
@@ -164,7 +164,7 @@ Representing how a collection of websites (or the entire world wide web) link to
    - [ ] A __`.forEachNode()`__ method that traverses through the graph, calling a passed in function once on each node
    - [ ] What is the time complexity of the above functions?
  
-##### 4. __[Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type))__ #####
+#### 4. __[Set](https://en.wikipedia.org/wiki/Set_(abstract_data_type))__ ####
 Sets contain unique values in no particular order.
 
 ![image](https://user-images.githubusercontent.com/76498304/116344478-21934080-a79b-11eb-9f69-9c036874b1f2.png)
@@ -180,7 +180,7 @@ A raffle, where all the tickets are unique and you just want to randomly pick on
     * __Note:__ Until the advanced section, your sets should handle only string values.
     * __Note:__ This is a rather simple data structure. Take a look at the [Wikipedia](https://en.wikipedia.org/wiki/Set_(abstract_data_type)) entry. Which native Javascript type fits the requirements best?
   
-##### 5. __[Hash Table](https://en.wikipedia.org/wiki/Hash_tables)__ #####
+#### 5. __[Hash Table](https://en.wikipedia.org/wiki/Hash_tables)__ ####
 Hash tables (sometimes called hash maps) store key value pairs. They do so in a memory efficient way by using a 'hashing function' that translates keys into numerical indices located within a fixed block of memory (think about the contiguous blocks of memory used in arrays). Hash tables only increase their size in memory when necessary, and reduce their size in memory when possible.
 
 ![image](https://user-images.githubusercontent.com/76498304/116344629-6cad5380-a79b-11eb-9119-84a835e2f7d3.png)
@@ -201,7 +201,7 @@ __On Objects and Hash Tables:__ An astute hacker might find themself wondering "
 
 ** Interesting Aside: JavaScript objects aren't necessarily backed by hash tables. Despite the similarities, the [ECMA-262](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf) standard makes no restrictions on how JavaScript objects are implmented. The [V8 JavaScript engine](https://v8.dev/#prop_access), which is used in Chrome, implements objects in a way that is significantly faster than using a hash table.
 
-##### 6. __[Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)__ #####
+#### 6. __[Binary Search Tree](https://en.wikipedia.org/wiki/Binary_search_tree)__ ####
 Binary trees are trees that can only have 0, 1, or 2 children. Remember that trees are recursive data structures and therefore a tree's children are themselves trees and can each have 0, 1, or 2 children. In a binary search tree, one child (out of potentially two) will always be less than the node's value (based on whatever sorting condition you wish) and the other child will always be greater than the node's value. Whether it is the 'left' or the 'right' child which is greater or lesser is consistent throughout the binary search tree. This structure results in particularly fast find operations. You'll be asked to answer just how fast yourself.
 
 ![image](https://user-images.githubusercontent.com/76498304/116344914-f6f5b780-a79b-11eb-8409-ce2ffa7679b5.png)

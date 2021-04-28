@@ -107,7 +107,9 @@ It uses a pre-commit hook to run staged files through __eslint__ before each com
 # Sprint Two: Data Structures #
 This repo holds a mostly-empty [Mocha](https://mochajs.org/) test suite. To run all the tests, first run __`npm start`__ in your terminal from the sprint's root directory. You'll know if this step completed successfully when you see the following output in your terminal:
 
-```Serving "/Users/.../your-sprint-folder" at http://127.0.0.1:xxxx```
+```
+Serving "/Users/.../your-sprint-folder" at http://127.0.0.1:xxxx
+```
 
 Now, navigate to the __`http://127.0.0.1:xxxx`__ link in your browser (don't forget to include the colon and extra numbers at the end), and open the __`SpecRunner.html`__ file.
 

@@ -1,5 +1,5 @@
 # Exercise: Data Structures #
-
+> This sprint was assigned to me as a student when attending Hack Reactor.
 # Sprint One: Object-Oriented Programming #
 In this assignment, we'll implement and test two basic data structures:
 
